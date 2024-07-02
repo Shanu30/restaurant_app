@@ -1,17 +1,17 @@
-import "./App.css";
-import { restaurants } from "./getStaticData";
-import ResCard from "./component/res-card/ResCard.jsx";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ResList from "./component/res-list/ResList.jsx";
+import ResMenu from "./component/res-menu/ResMenu.jsx";
 import Header from "./component/header/Header.jsx";
 function App() {
   return (
-    <>
-    <Header/>
-      <div className="card-container">
-        {restaurants.map((item) => {
-          return <ResCard restaurant={item} />;
-        })}
-      </div>
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<ResList />} />
+        <Route path="/menu/:resId" element={<ResMenu />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

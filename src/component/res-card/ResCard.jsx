@@ -1,4 +1,5 @@
 import React from "react";
+import "./resCard.css";
 import { TiStarFullOutline } from "react-icons/ti";
 import { GoDotFill } from "react-icons/go";
 
@@ -15,7 +16,7 @@ const ResCard = ({ restaurant }) => {
           <TiStarFullOutline color="green" fontSize={"15px"} />
           <div>{restaurant.avgRating}</div>
           <GoDotFill style={{ marginTop: "2px", marginLeft: "5px" }} />
-          <div style={{ marginLeft: "5px" }}>{restaurant.sla.slaString}</div>
+          <div style={{ marginLeft: "5px" }}>{restaurant.sla}</div>
         </div>
         <div className="address text-overflow">
           {restaurant.cuisines.join(", ")}
