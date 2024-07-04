@@ -3,7 +3,20 @@ import "./searchBar.css";
 import { FiFilter } from "react-icons/fi";
 import { FiChevronDown } from "react-icons/fi";
 
-const SearchBar = ({ searchVal, setSearchVal }) => {
+const SearchBar = ({
+  searchVal,
+  setSearchVal,
+  veg,
+  setVeg,
+  //   sortBy,
+  setSortBy,
+  isDropdownOpen,
+  setIsDropdownOpen,
+}) => {
+  const handleSortChange = (e) => {
+    setSortBy(e.target.getAttribute("value"));
+    setIsDropdownOpen(false);
+  };
   return (
     <div className="search-bar">
       <input
@@ -15,21 +28,51 @@ const SearchBar = ({ searchVal, setSearchVal }) => {
       />
       <div className="filter-wraper">
         <div className="dropdown-container">
-          <button className="dropdown button">
+          <button
+            className="dropdown button"
+            onClick={() => {
+              setIsDropdownOpen((prev) => !prev);
+            }}
+          >
             Sort By:
             <FiChevronDown className="dropdown-icon" />
           </button>
-          <select
-            className="dropdown-select"
-            // value={sortBy}
-            // onChange={(e) => setSortBy(e.target.value)}
-          >
-            <option value="low">Price: Low to High</option>
-            <option value="high">Price: High to Low</option>
-          </select>
+          {isDropdownOpen && (
+            // <select
+            //   className="dropdown-select"
+            //   value={sortBy}
+            //   onChange={(e) => setSortBy(e.target.value)}
+            // >
+            //   <option value="">Select</option>
+            //   <option value="low">Price: Low to High</option>
+            //   <option value="high">Price: High to Low</option>
+            // </select>
+            <div className="dropdown-menu">
+              <div
+                className="dropdown-item"
+                value="low"
+                onClick={handleSortChange}
+              >
+                Price: Low to High
+              </div>
+              <div
+                className="dropdown-item"
+                value="high"
+                onClick={handleSortChange}
+              >
+                Price: High to Low
+              </div>
+            </div>
+          )}
         </div>
-        <button className="button text">Pure Veg</button>
-        <button className="button text">Only Non Veg</button>
+        <button
+          className="button text"
+          onClick={() => {
+            setVeg((prevVeg) => !prevVeg);
+          }}
+        >
+          {!veg ? "Only Veg" : "Show All"}
+        </button>
       </div>
     </div>
   );

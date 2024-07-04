@@ -53,7 +53,6 @@ export const restaurants = [
     avgRating: 4.5,
     veg: true,
     sla: "20-25 mins",
-    
   },
 
   {

@@ -50,21 +50,26 @@
 .dropdown-icon {
   margin-left: 8px;
 }
-.dropdown-select {
+
+.dropdown-menu {
+  width: 200px;
+  display: block;
+  border-radius: 20px;
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
-  padding: 10px 15px;
+  z-index: 1;
+  background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 20px;
-  background-color: white;
-  display: none;
-  cursor: pointer;
-  /* font-size: 16px; */
-  /* font-weight: 600; */
+  margin-top: 5px;
 }
 
-.dropdown-container:hover .dropdown-select {
-  display: block;
+.dropdown-item {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
 }
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}   

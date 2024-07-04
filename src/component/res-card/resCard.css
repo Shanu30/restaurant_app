@@ -49,3 +49,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.cost {
+  font-size: 0.9em;
+  color: #333;
+  font-weight: bold;
+  padding-top: 5px;
+}

@@ -18,6 +18,7 @@ const ResCard = ({ restaurant }) => {
           <GoDotFill style={{ marginTop: "2px", marginLeft: "5px" }} />
           <div style={{ marginLeft: "5px" }}>{restaurant.sla}</div>
         </div>
+        <div className="cost">{restaurant.costForTwo}</div>
         <div className="address text-overflow">
           {restaurant.cuisines.join(", ")}
         </div>
