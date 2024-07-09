@@ -274,3 +274,97 @@ export const restaurants = [
     sla: "25-30 mins",
   },
 ];
+export const menuItems = [
+  {
+    price: 309,
+    id: "142942525",
+    isVeg: 1,
+    name: "Tandoori Paneer",
+    description:
+      "Serves 1 | It's our signature. Spiced paneer, crunchy onions & green capsicum, spicy red paprika with delicious tandoori sauce and 100% mozzarella cheese! (PAN Per/Med-335 Kcal/100g | TnC-326 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
+    imageId: "s5ld93rsknx0fhj6xarn",
+    rating: "4",
+  },
+
+  {
+    price: 329,
+    id: "142942527",
+    isVeg: 1,
+    name: "Margherita",
+    description:
+      "Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese. A classic treat for all cheese lovers out there! (PAN Per/Med-292 Kcal/100g | TnC-293 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
+    imageId: "dpventcrozvfni0lqb10",
+    rating: "4",
+  },
+  {
+    price: 409,
+    id: "142942529",
+    isVeg: 1,
+    name: "Veggie Supreme",
+    description:
+      "Serves 1 | A supreme combination of black olives, green capsicum, mushroom, onion, spicy red paprika & juicy sweet corn with flavourful pan sauce and 100% mozzarella cheese. (PAN Per/Med-254 Kcal/100g | TnC-258 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
+    imageId: "z0c4xpovma1qtmu4tlls",
+    rating: "4",
+  },
+  {
+    price: 249,
+    id: "142942539",
+    isVeg: 1,
+    name: "Veggie Feast",
+    description:
+      "Serves 1 | Herbed onion and green capsicum, juicy sweet corn & 100% mozzarella cheese with flavourful pan sauce (PAN Per/Med-269 Kcal/100g | TnC-274 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
+    imageId: "cbye9x7wxeopwqvenn7g",
+    rating: "4",
+  },
+  {
+    price: 269,
+    id: "142942540",
+    isVeg: 1,
+    name: "Margherita Pizza",
+    description:
+      "Serves 1 | Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese. A classic treat for all cheese lovers out there! (292 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
+    imageId: "dpventcrozvfni0lqb10",
+    rating: "4",
+  },
+  {
+    price: 309,
+    id: "142942541",
+    isVeg: 1,
+    name: "Country Feast",
+    description:
+      "Serves 1 | Loaded with herbed onion & green capsicum, sweet corn, tomato with signature pan sauce and 100% mozzarella cheese. It's a feast you can't refuse (PAN Per/Med-244 Kcal/100g | TnC-282 Kcal/100g | Stuffed Crust Add : Per: 227 Kcal/100g | Med: 216 Kcal/100g) Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
+    imageId: "c3832837392378cca98e484b89c313ba",
+    rating: "4",
+  },
+  {
+    price: 60,
+    id: "142942542",
+    isVeg: 1,
+    name: "Cheesy Dip",
+    description:
+      "Serves 1 | Cheesy jalapeno dip 20 gm (49 Kcal/100g) Contains Cereals containing Gluten (Wheat) & Soya.",
+    imageId: "l7twhqhybkdlsvkyq3pj",
+    rating: "4",
+  },
+  {
+    price: 159,
+    id: "12901688",
+    isVeg: 1,
+    name: "Cheese Garlic Bread",
+    description:
+      "Serves 1 | Nothing beats our garlic bread! Period! (363 Kcal/100g). Contains Cereals containing Gluten (Wheat), Soya and Milk & Milk Products.",
+    imageId: "ziohlqoy38mfqzmfxy7e",
+    rating: "4",
+  },
+  {
+    id: "12901071",
+    name: "Pepsi 475ml",
+    description:
+      "Serves 1 | Pepsi PET 475ml. Contains Caffeine (43 Kcal/100ml)",
+    imageId:
+      "FOOD_CATALOG/IMAGES/CMS/2024/3/19/8df1017a-bfa8-45c0-a643-be8dc39b36d6_f2aec0bf-0d44-4a94-ab17-e75f87c2c128.png",
+    isVeg: 1,
+    price: 570,
+    rating: "4",
+  },
+];

@@ -1,6 +1,5 @@
 import React from "react";
 import "./searchBar.css";
-import { FiFilter } from "react-icons/fi";
 import { FiChevronDown } from "react-icons/fi";
 
 const SearchBar = ({
@@ -8,7 +7,6 @@ const SearchBar = ({
   setSearchVal,
   veg,
   setVeg,
-  //   sortBy,
   setSortBy,
   isDropdownOpen,
   setIsDropdownOpen,
@@ -38,15 +36,6 @@ const SearchBar = ({
             <FiChevronDown className="dropdown-icon" />
           </button>
           {isDropdownOpen && (
-            // <select
-            //   className="dropdown-select"
-            //   value={sortBy}
-            //   onChange={(e) => setSortBy(e.target.value)}
-            // >
-            //   <option value="">Select</option>
-            //   <option value="low">Price: Low to High</option>
-            //   <option value="high">Price: High to Low</option>
-            // </select>
             <div className="dropdown-menu">
               <div
                 className="dropdown-item"

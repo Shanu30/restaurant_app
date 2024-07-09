@@ -47,7 +47,7 @@ function ResList() {
       />
       <div className="card-container">
         {filteredRestaurants.map((item) => {
-          return <ResCard restaurant={item} />;
+          return <ResCard key={item.id} restaurant={item} />;
         })}
       </div>
     </>

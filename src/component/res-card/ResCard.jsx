@@ -5,7 +5,7 @@ import { GoDotFill } from "react-icons/go";
 
 const ResCard = ({ restaurant }) => {
   return (
-    <div className="restaurant-card" key={restaurant.id}>
+    <div className="restaurant-card">
       <img
         src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${restaurant.cloudinaryImageId}`}
         alt={restaurant.name}
