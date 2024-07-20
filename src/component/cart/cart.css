@@ -1,0 +1,77 @@
+.cart {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.cart h2 {
+  text-align: center;
+}
+
+.cart button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart h3 {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.cart-item {
+  width: 90%;
+  margin: 15px auto;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-container {
+  position: relative;
+  width: 70;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.right-container {
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.item-image {
+  width: 150px;
+  height: 120px;
+  border-radius: 8px;
+}
+.veg-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+}
+
+.remove-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  background-color: rgb(2, 158, 2);
+  color: white;
+  cursor: pointer;
+}

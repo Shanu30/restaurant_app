@@ -2,9 +2,15 @@ import React from "react";
 import { menuItems } from "../../getStaticData";
 import "./resMenu.css";
 import { IoMdRadioButtonOn } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../redux/slices/cartSlice";
 
 const ResMenu = () => {
   // const { parentId, name, area, completeAddress, menu } = menuItems;
+  const dispatch = useDispatch();
+  const handleAddItem = (item) => {
+    dispatch(addItem(item));
+  };
   return (
     <div className="menu-container">
       {menuItems.map((item) => (
@@ -23,7 +29,9 @@ const ResMenu = () => {
               alt={item.name}
               className="menu-item-image"
             />
-            <button className="add-button">ADD</button>{" "}
+            <button className="add-button" onClick={() => handleAddItem(item)}>
+              ADD
+            </button>
           </div>
         </div>
       ))}

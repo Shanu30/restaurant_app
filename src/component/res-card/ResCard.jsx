@@ -2,10 +2,16 @@ import React from "react";
 import "./resCard.css";
 import { TiStarFullOutline } from "react-icons/ti";
 import { GoDotFill } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 
 const ResCard = ({ restaurant }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/menu/${restaurant.id}`);
+  };
   return (
-    <div className="restaurant-card">
+    <div className="restaurant-card" onClick={handleClick}>
       <img
         src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${restaurant.cloudinaryImageId}`}
         alt={restaurant.name}
