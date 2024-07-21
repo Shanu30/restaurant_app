@@ -1,23 +1,32 @@
 .cart {
   width: 50%;
-  margin: auto;
+  margin: 20px auto;
   border: 1px solid #ccc;
   border-radius: 10px;
+  padding: 20px;
 }
 
 .cart h2 {
   text-align: center;
 }
 
-.cart button {
-  margin: 0 5px;
-  padding: 5px 10px;
-  cursor: pointer;
+.cart p {
+  text-align: center;
 }
 
-.cart h3 {
-  text-align: right;
-  padding-right: 20px;
+.checkout-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-button button {
+  height: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: aqua;
+  border: none;
 }
 
 .cart-item {

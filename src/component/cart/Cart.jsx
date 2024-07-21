@@ -2,8 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { IoMdRadioButtonOn } from "react-icons/io";
 import "./cart.css";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate();
   let cart = useSelector((store) => store.cart.items);
   const removeItem = (itemId) => {
     cart = (prevItems) => prevItems.filter((item) => item.id !== itemId);
@@ -48,7 +50,18 @@ const Cart = () => {
           ))}
         </>
       )}
-      <h3>Total: {getTotal}</h3>
+
+      <div className="checkout-button">
+        <h3>Total: {getTotal}</h3>
+        <button
+          onClick={() => {
+            alert("Order Placed");
+            navigate("/");
+          }}
+        >
+          Place Order
+        </button>
+      </div>
     </div>
   );
 };
